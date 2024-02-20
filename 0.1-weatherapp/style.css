@@ -62,7 +62,7 @@ body {
 .weather h1 {
   font-size: 80px;
   font-weight: 500;
-  color: #d93af5;
+  color: #bd39ff;
 
 }
 
@@ -70,7 +70,7 @@ body {
   font-size: 45px;
   font-weight: 400;
   margin-top: -10px;
-  color: #d93af5;
+  color: #bd39ff;
 }
 
 .details {
