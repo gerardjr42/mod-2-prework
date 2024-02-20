@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randon Password Generator</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Generate a <br><span>Random Password</span></h1>
+    <div class="display">
+      <input type="text" id="password" placeholder="Password">
+      <img src="images/copy.gif" alt="copy icon" onclick="copyPassword()">
+      <!-- <a href="https://www.flaticon.com/free-animated-icons/document" title="document animated icons">Document animated icons created by Freepik - Flaticon</a> -->
+    </div>
+    <button onclick="createPassword()"><img src="images/thunder.png" alt="thunder icon">Generate Password</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
