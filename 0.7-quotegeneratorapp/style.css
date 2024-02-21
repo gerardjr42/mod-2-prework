@@ -8,11 +8,11 @@
 }
 
 body {
-  background: #bbc6fa; 
+  background: #000000; 
 }
 
 .quote-box {
-  background: #fff;
+  background: #cfcece;
   width: 700px;
   position: absolute;
   top: 50%;
@@ -87,4 +87,14 @@ body {
   justify-content: center;
   margin: 5px;
   cursor: pointer;
+}
+
+.quote-box button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.quote-box button:nth-child(2) {
+  background: #333;
+  color: #fff;
 }
