@@ -18,10 +18,21 @@
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
-      <!-- Can we update this image that matches song? -->
-      <!-- Use spotify API, do this if you don't want a static img for every song -->
-      <img src="media/thumbnail.png" class="song-img" alt="song-img">
+      <!-- Use spotify API? -->
+      <img src="media/profiletest.png" class="song-img" alt="song-img">
+      <h1>Crazy in Love</h1>
+      <p>EDEN ft. Leah Kelly</p>
+      <audio controls id="song">
+        <source src="media/song.mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" value="0" id="progress">
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+      </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
