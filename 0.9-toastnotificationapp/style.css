@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #000000, #303030);
+}
+
+.buttons {
+  margin: 50px;
+}
+
+.buttons button {
+  background: #333;
+  color: #00ff11;
+  border: 0;
+  outline: 0;
+  width: 120px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#toastBox {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Create the css for the notifications */
+
+.toast {
+  width: 400px;
+  height: 80px;
+  background: #333;
+  font-weight: 500;
+  color: #00ff11;
+  margin: 15px 0;
+  box-shadow: 0 0 20px rgba(2, 134, 2, 0.3);
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translateX(100%);
+  /* Moves toast notification pop and move right to left */
+  animation: moveleft 0.5s linear forwards;
+}
+/* created the keyframes for the above */
+@keyframes moveleft {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.toast i {
+  margin: 0 20px;
+  font-size: 35px;
+  color: green;
+}
+
+.toast.error i {
+  color: red;
+}
+
+.toast.invalid i {
+  color: orange;
+}
+
+.toast::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: green;
+  /* The animation shorthand CSS property applies an animation between styles. Click on animation for mdn reference*/
+  animation: anim 4s linear forwards;
+}
+
+@keyframes anim {
+  100%{
+    width: 0;
+  }
+}
+/* Creates the keyframes animation color with a counter from full, gradually decreases the loading effect */
+.toast.error::after {
+  background: red;
+}
+
+.toast.invalid::after {
+  background: orange;
+}
+
